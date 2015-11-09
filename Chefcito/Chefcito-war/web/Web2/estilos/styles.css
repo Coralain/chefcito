@@ -1,0 +1,34 @@
+.mdl-layout__header {
+    padding: 0.5em;
+}
+
+.mdl-layout__drawer-button .material-icons {
+    color: white;
+}
+
+.mdl-layout__drawer {
+    background: #009688;
+    border: 0px;
+    color: white;
+}
+
+.mdl-layout-title {
+    margin-top: 2em;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: white;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background: #88cccc;
+}
+
+.mdl-grid {
+    margin-top: 7em;
+    margin-bottom: 2em;
+}
+
+article p {
+    text-align: justify;
+}
