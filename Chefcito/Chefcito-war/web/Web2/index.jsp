@@ -22,24 +22,7 @@
         <link rel="stylesheet" href="estilos/styles.css"/>
     </head>
     <body>
-        <!-- BOTON-IR ARRIBA -->
-        <span class="ir-arriba icon-arrow-up"></span>
-
-        <!-- ACORDEON REDES SOCIALES -->
-        <div id="container-main">
-            <div class="accordion-container">
-                <a href="#" class="accordion-titulo"></a> 
-                <div class="accordion-content">
-                    <div class="circulos">
-                        <a href="https://plus.google.com/up/connect" target="_blank" class="icon-google-plus"></a>
-                        <a href="https://www.facebook.com/" class="icon-facebook2" target="_blank"></a>
-                        <a href="http://instagram.com/" target="_blank" class="icon-instagram"></a>
-                        <a href="https://twitter.com/?lang=es" target="_blank"   class="icon-twitter2"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <!-- MATERIAL DESIGN -->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="mdl-layout__header">
@@ -71,6 +54,26 @@
                 </nav>
             </div>
             <main class="mdl-layout__content">
+            
+                <!-- BOTON-IR ARRIBA -->
+                <span class="ir-arriba icon-arrow-up"></span>
+    
+                <!-- ACORDEON REDES SOCIALES -->
+                <div id="container-main">
+                    <div class="accordion-container">
+                        <a href="#" class="accordion-titulo"></a> 
+                        <div class="accordion-content">
+                            <div class="circulos">
+                                <a href="https://plus.google.com/up/connect" target="_blank" class="icon-google-plus"></a>
+                                <a href="https://www.facebook.com/" class="icon-facebook2" target="_blank"></a>
+                                <a href="http://instagram.com/" target="_blank" class="icon-instagram"></a>
+                                <a href="https://twitter.com/?lang=es" target="_blank"   class="icon-twitter2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
                 <div class="page-content">
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
