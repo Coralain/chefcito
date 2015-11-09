@@ -1,8 +1,7 @@
 # chefcito
 Red social para cociner@s
-.
-.
-.
+
+#
 Chefcito-war: Usa servlets
 
 Web 1: Versión 1
