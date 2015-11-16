@@ -3,6 +3,16 @@
     color: #B2EBF2;
 }
 
+ul, ul li {
+    list-style: none;
+}
+
+.fixed-botton {
+    position: fixed;
+    bottom: 0px;
+}
+
+
 .mdl-layout__header {
     padding: 0.5em;
 }
@@ -45,9 +55,23 @@
     width: 85%;
 }
 
-.mdl-grid {
+main .mdl-grid {
     margin-top: 7em;
     margin-bottom: 2em;
+}
+
+.main2 article:first-child {
+    border-top: none;
+}
+
+.main2 article{
+    border-top: 1px solid #727272;
+}
+
+article img.fotoArt {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
 }
 
 article p {
@@ -74,15 +98,60 @@ article span.tags button{
     padding: 0px;
 }
 
-.center {
-    text-align: center;
+article .mdl-grid {
+    margin-top: 2.5em;
+    margin-bottom: 0px;
 }
 
-.left {
-    text-align: left;
+
+ul.coments:last-child {
+    margin-bottom: 1.5em;
+}
+article ul.coments li {
+    margin-top: 0px;
+    padding: 0px;
+    line-height: 0.75em;
+    vertical-align: middle;
 }
 
-.fixed-botton {
-    position: fixed;
+article ul.coments li .add {
+    margin-top: -4em;
+}
+
+article ul.coments li form .mdl-textfield {
+    width: 80%;
+}
+
+
+#add-popup {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0px;
     bottom: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 999;
+    position: absolute;
+    display: table;
 }
+
+#add-popup #adding {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+#adding form#new-public {
+    width: 40%;
+    padding: 2em;
+    text-align: right;
+    margin: 0px auto;
+    background: #fff;
+    vertical-align: middle;
+}
+
+#adding form#new-public .mdl-textfield {
+    width: 100%;
+}
+

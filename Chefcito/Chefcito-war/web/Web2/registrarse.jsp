@@ -21,6 +21,7 @@
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <link rel="stylesheet" href="estilos/styles.css"/>
+        <link rel="stylesheet" href="estilos/palette.css"/>
     </head>
     <body>
         <!-- MATERIAL DESIGN -->
@@ -42,7 +43,7 @@
 
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--5-col mdl-cell--2-col-tablet mdl-cell--hide-phone"></div>
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-typography--text-center">
                         <div class="mdl-typography--display-3">
                             Bienvenid@
                         </div>
@@ -68,8 +69,8 @@
                                 <label class="mdl-textfield__label" for="correo">Correo</label>
                             </div>
                             <br/>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="fecnac">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">                                
+                                <input class="mdl-textfield__input" type="date" id="fecnac">
                                 <label class="mdl-textfield__label" for="fecnac">Fecha de nacimiento</label>
                             </div>
                             <br/>
@@ -79,11 +80,16 @@
                             </div>
                             <br/>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="contr">
+                                <input class="mdl-textfield__input" type="password" id="contr">
                                 <label class="mdl-textfield__label" for="contr">Contraseña</label>
                             </div>
                             <br/>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect left" for="private">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="password" id="contr2">
+                                <label class="mdl-textfield__label" for="contr2">Confirmar Contraseña</label>
+                            </div>
+                            <br/>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-typography--text-left" for="private">
                                 <input type="checkbox" id="private" class="mdl-checkbox__input">
                                 <span class="mdl-checkbox__label">Privado</span>
                             </label>

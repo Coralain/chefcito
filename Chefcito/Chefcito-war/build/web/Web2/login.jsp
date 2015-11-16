@@ -21,6 +21,7 @@
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <link rel="stylesheet" href="estilos/styles.css"/>
+        <link rel="stylesheet" href="estilos/palette.css"/>
     </head>
     <body>
         <!-- MATERIAL DESIGN -->
@@ -42,7 +43,7 @@
 
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
-                    <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet center">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-typography--text-center">
                         <div class="mdl-typography--display-3">
                             Bienvenid@
                         </div>

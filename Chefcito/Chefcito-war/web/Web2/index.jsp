@@ -16,11 +16,14 @@
         <script src="js/main.js"></script>
         <!-- CARGA DE PAGINA -->
         <script  src="js/pace.min.js"></script>
+        <!--OTROS-->
+        <script src="js/jsCode.js"></script>
         <!-- MATERIAL DESIGN -->
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-teal.min.css" />
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <link rel="stylesheet" href="estilos/styles.css"/>
+        <link rel="stylesheet" href="estilos/palette.css"/>
     </head>
     <body>
         <!-- MATERIAL DESIGN -->
@@ -90,7 +93,37 @@
                         <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">
                             <section class="main2">
                                 <article>
-                                    <h1>TITULO 1</h1>
+                                    <p>
+                                        <button class="mdl-button mdl-js-button mdl-button--icon" id="add">
+                                            <i class="material-icons">add</i>
+                                        </button>
+                                        Agregar nueva publicación
+                                    </p>
+                                </article>
+                                <div id="add-popup">
+                                    <div id="adding">
+                                        <form id="new-public">
+                                            <div class="mdl-textfield mdl-js-textfield">
+                                                <input class="mdl-textfield__input" type="text" id="sample1">
+                                                <label class="mdl-textfield__label" for="sample1">Título</label>
+                                            </div>
+                                            <br/>
+                                            <div class="mdl-textfield mdl-js-textfield">
+                                                <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                                <label class="mdl-textfield__label" for="sample5">Publicación</label>
+                                            </div>
+                                            <br/>
+                                            <button class="mdl-button mdl-js-button mdl-button--primary close-add">
+                                                Cancelar
+                                            </button>
+                                            <button class="mdl-button mdl-js-button mdl-button--primary close-add">
+                                                Publicar
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <article>
+                                    <h1><img src="images/favicon.png" class="fotoArt"/> TITULO 1</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 
                                         Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex. Ea aperiri sententiae duo. Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur. Consetetur neglegentur eum ut, vis animal legimus inimicus id.
@@ -122,10 +155,76 @@
                                                 #tag2
                                             </button>
                                         </span>
+                                        <br/>
                                     </p>
+                                    <p>Ver comentarios 
+                                        <button class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">keyboard_arrow_down</i>
+                                        </button>
+                                    </p>
+                                    <ul class="coments">
+                                        <li>
+                                            <form action="#">
+                                                <div class="mdl-textfield mdl-js-textfield">
+                                                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                                    <label class="mdl-textfield__label" for="sample5">Agregar comentario...</label>
+                                                </div>
+                                                <button class="mdl-button mdl-js-button mdl-button--icon add">
+                                                    <i class="material-icons">add</i>
+                                                </button>
+                                            </form>
+                                        </li>
+
+                                        <li class="mdl-grid">
+                                            <div class="mdl-cell mdl-cell--2-col">
+                                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                                                    <i class="material-icons">favorite</i>
+                                                </button>
+                                                <img src="images/1.png" class="foto"/> &nbsp;
+                                                <strong>Nombre</strong>:
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--10-col">
+                                                <span>Comentario</span>
+                                                <br/>
+                                                <div class="mdl-typography--text-right mdl-typography--caption-color-contrast">
+                                                    <label name="cantLikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                                                        <i class="material-icons">thumb_up</i>
+                                                    </button> &nbsp;
+                                                    <label name="cantDislikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                        <i class="material-icons">thumb_down</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mdl-grid">
+                                            <div class="mdl-cell mdl-cell--2-col">
+                                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-typography--caption-color-contrast">
+                                                    <i class="material-icons">favorite_border</i>
+                                                </button>
+                                                <img src="images/3.png" class="foto"/> &nbsp;
+                                                <strong>Nombre</strong>:
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--10-col">
+                                                <span>Comentario</span>
+                                                <br/>
+                                                <div class="mdl-typography--text-right mdl-typography--caption-color-contrast">
+                                                    <label name="cantLikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                        <i class="material-icons">thumb_up</i>
+                                                    </button> &nbsp;
+                                                    <label name="cantDislikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                        <i class="material-icons">thumb_down</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </article>
                                 <article>
-                                    <h1>TITULO 2</h1>
+                                    <h1><img src="images/favicon.png" class="fotoArt"/> TITULO 2</h1>
                                     <div class="slide">
                                         <a class="gallery-image" rel="gallery" href="images/img1.png" ><img src="images/img1.png"/></a>
                                         <a class="gallery-image" rel="gallery" href="images/img2.png" ><img src="images/img2.png"/></a>
@@ -152,7 +251,73 @@
                                                 #tag2
                                             </button>
                                         </span>
+                                        <br/>
                                     </p>
+                                    <p>Ver comentarios 
+                                        <button class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">keyboard_arrow_down</i>
+                                        </button>
+                                    </p>
+                                    <ul class="coments">
+                                        <li>
+                                            <form action="#">
+                                                <div class="mdl-textfield mdl-js-textfield">
+                                                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                                    <label class="mdl-textfield__label" for="sample5">Agregar comentario...</label>
+                                                </div>
+                                                <button class="mdl-button mdl-js-button mdl-button--icon add">
+                                                    <i class="material-icons">add</i>
+                                                </button>
+                                            </form>
+                                        </li>
+
+                                        <li class="mdl-grid">
+                                            <div class="mdl-cell mdl-cell--2-col">
+                                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                                                    <i class="material-icons">favorite</i>
+                                                </button>
+                                                <img src="images/1.png" class="foto"/> &nbsp;
+                                                <strong>Nombre</strong>:
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--10-col">
+                                                <span>Comentario</span>
+                                                <br/>
+                                                <div class="mdl-typography--text-right mdl-typography--caption-color-contrast">
+                                                    <label name="cantLikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                                                        <i class="material-icons">thumb_up</i>
+                                                    </button> &nbsp;
+                                                    <label name="cantDislikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                        <i class="material-icons">thumb_down</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mdl-grid">
+                                            <div class="mdl-cell mdl-cell--2-col">
+                                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-typography--caption-color-contrast">
+                                                    <i class="material-icons">favorite_border</i>
+                                                </button>
+                                                <img src="images/3.png" class="foto"/> &nbsp;
+                                                <strong>Nombre</strong>:
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--10-col">
+                                                <span>Comentario</span>
+                                                <br/>
+                                                <div class="mdl-typography--text-right mdl-typography--caption-color-contrast">
+                                                    <label name="cantLikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                        <i class="material-icons">thumb_up</i>
+                                                    </button> &nbsp;
+                                                    <label name="cantDislikesR">20</label>
+                                                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                        <i class="material-icons">thumb_down</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </article>
                             </section>
                         </div>
