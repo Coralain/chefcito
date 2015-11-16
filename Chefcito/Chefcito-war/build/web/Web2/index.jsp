@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
         <link rel="stylesheet" type="text/css" href="estilos/fonts.css">
         <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="">
         <title>Chefcito</title>
         <!-- GALERIA DE IMAGENES -->
         <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
@@ -22,55 +23,67 @@
         <link rel="stylesheet" href="estilos/styles.css"/>
     </head>
     <body>
-        <!-- BOTON-IR ARRIBA -->
-        <span class="ir-arriba icon-arrow-up"></span>
-
-        <!-- ACORDEON REDES SOCIALES -->
-        <div id="container-main">
-            <div class="accordion-container">
-                <a href="#" class="accordion-titulo"></a> 
-                <div class="accordion-content">
-                    <div class="circulos">
-                        <a href="https://plus.google.com/up/connect" target="_blank" class="icon-google-plus"></a>
-                        <a href="https://www.facebook.com/" class="icon-facebook2" target="_blank"></a>
-                        <a href="http://instagram.com/" target="_blank" class="icon-instagram"></a>
-                        <a href="https://twitter.com/?lang=es" target="_blank"   class="icon-twitter2"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- MATERIAL DESIGN -->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
-                    <div class="pt1">
-                        <div class="logo"><img src="images/propuesta11_logo.png" width="200" height="80"></div>
+                    <div class="pt1 mdl-layout--large-screen-only">
+                        <div class="logo">
+                            <img src="images/propuesta11_logo.png" width="200" height="80">
+                        </div>
                     </div>
                     <div class="mdl-layout-spacer"></div>
                     <div class="pt2">
                         <div class="search_bar">
                             <a href="" class="icon-search"></a>
+                            <!--a href=""><i class="material-icons">search</i></a-->
                             <input type="text" id="bar"  autocomplete="on" placeholder="Explorar Temas">
                         </div>
                     </div>
                     <div class="mdl-layout-spacer"></div>
                     <div class="pt3">
-                        <a href="" class="icon-mail2"></a>
-                        <img src="images/favicon.png" class="foto">
+                        <!--a href="" class="icon-mail2"></a-->
+                        <a href="">
+                            <span class="material-icons mdl-badge" data-badge="1">email</span>
+                        </a>
+                        <a href="">
+                            <span class="material-icons mdl-badge" data-badge="1">notifications</span>
+                        </a>
+                        <img src="images/favicon.png" class="foto mdl-cell--hide-phone"/>
                     </div>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
-                <span class="mdl-layout-title">Title</span>
+                <span class="mdl-layout-title">
+                    <img src="images/propuesta11_logo.png" />
+                </span>
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">person</i>&nbsp; Perfil</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">thumb_up</i>&nbsp; Likes</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">settings</i>&nbsp; Configuración</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">close</i>&nbsp; Cerrar sesión</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
+
+                <!-- BOTON-IR ARRIBA -->
+                <span class="ir-arriba icon-arrow-up"></span>
+
+                <!-- ACORDEON REDES SOCIALES -->
+                <div id="container-main">
+                    <div class="accordion-container">
+                        <a href="#" class="accordion-titulo"></a> 
+                        <div class="accordion-content">
+                            <div class="circulos">
+                                <a href="https://plus.google.com/up/connect" target="_blank" class="icon-google-plus"></a>
+                                <a href="https://www.facebook.com/" class="icon-facebook2" target="_blank"></a>
+                                <a href="http://instagram.com/" target="_blank" class="icon-instagram"></a>
+                                <a href="https://twitter.com/?lang=es" target="_blank"   class="icon-twitter2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="page-content">
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
@@ -89,6 +102,27 @@
                                         Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
 
                                         Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.</p>
+                                    <p class="article-footer mdl-grid mdl-typography--display-4-color-contrast">
+                                        <span class="mdl-cell mdl-cell--4-col">
+                                            <label name="cantLikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_up</i>
+                                            </button> &nbsp;&nbsp;
+                                            <label name="cantDislikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_down</i>
+                                            </button> &nbsp;&nbsp;&nbsp;
+                                            Publicado el <label name="fec-pub">01/01/2015</label>
+                                        </span>
+                                        <span class="tags mdl-cell mdl-cell--8-col">
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag1
+                                            </button>
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag2
+                                            </button>
+                                        </span>
+                                    </p>
                                 </article>
                                 <article>
                                     <h1>TITULO 2</h1>
@@ -98,6 +132,27 @@
                                         <a class="gallery-image" rel="gallery" href="images/img3.png" ><img src="images/img3.png"/></a>
                                         <a class="gallery-image" rel="gallery" href="images/img4.png" ><img src="images/img4.png"/></a>
                                     </div>
+                                    <p class="article-footer mdl-grid mdl-typography--display-4-color-contrast">
+                                        <span class="mdl-cell mdl-cell--4-col">
+                                            <label name="cantLikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_up</i>
+                                            </button> &nbsp;&nbsp;
+                                            <label name="cantDislikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_down</i>
+                                            </button> &nbsp;&nbsp;&nbsp;
+                                            Publicado el <label name="fec-pub">01/01/2015</label>
+                                        </span>
+                                        <span class="tags mdl-cell mdl-cell--8-col">
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag1
+                                            </button>
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag2
+                                            </button>
+                                        </span>
+                                    </p>
                                 </article>
                             </section>
                         </div>
@@ -111,11 +166,10 @@
                                 <li><a href="www.facebook.com"><span class="icon-facebook"></span></a></li>
                                 <li><a href="www.twitter.com"><span class="icon-twitter"></span></a></li>
                                 <li><a href="www.instagram.com"><span class="icon-instagram"></span></a></li>
-                                <li><a href="www.gmail.com"><span class="icon-mail"></span></a></li>
+                                <li><a href="plus.google.com/up/connect"><span class="icon-google-plus"></span></a></li>
                             </ul>
                         </div>
                     </footer>
-
                 </div>
             </main>
         </div>

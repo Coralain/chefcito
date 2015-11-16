@@ -58,10 +58,10 @@
                     <img src="images/propuesta11_logo.png" />
                 </span>
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Perfil</a>
-                    <a class="mdl-navigation__link" href="">Configuración</a>
-                    <a class="mdl-navigation__link" href="">Publicaciones favoritas</a>
-                    <a class="mdl-navigation__link" href="">Cerrar sesión</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">person</i>&nbsp; Perfil</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">thumb_up</i>&nbsp; Likes</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">settings</i>&nbsp; Configuración</a>
+                    <a class="mdl-navigation__link" href=""><i class="material-icons">close</i>&nbsp; Cerrar sesión</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
@@ -102,17 +102,25 @@
                                         Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.
 
                                         Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.</p>
-                                    <p class="article-footer">
-                                        <span class="valoracion">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                                20 <i class="material-icons">thumb_up</i>
-                                            </button>
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                                5 <i class="material-icons">thumb_down</i>
-                                            </button>
+                                    <p class="article-footer mdl-grid mdl-typography--display-4-color-contrast">
+                                        <span class="mdl-cell mdl-cell--4-col">
+                                            <label name="cantLikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_up</i>
+                                            </button> &nbsp;&nbsp;
+                                            <label name="cantDislikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_down</i>
+                                            </button> &nbsp;&nbsp;&nbsp;
+                                            Publicado el <label name="fec-pub">01/01/2015</label>
                                         </span>
-                                        <span class="published">
-                                            Publicado el 01/01/2015
+                                        <span class="tags mdl-cell mdl-cell--8-col">
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag1
+                                            </button>
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag2
+                                            </button>
                                         </span>
                                     </p>
                                 </article>
@@ -124,17 +132,25 @@
                                         <a class="gallery-image" rel="gallery" href="images/img3.png" ><img src="images/img3.png"/></a>
                                         <a class="gallery-image" rel="gallery" href="images/img4.png" ><img src="images/img4.png"/></a>
                                     </div>
-                                    <p class="article-footer">
-                                        <span class="valoracion">
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                                20 <i class="material-icons">thumb_up</i>
-                                            </button>
-                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                                5 <i class="material-icons">thumb_down</i>
-                                            </button>
+                                    <p class="article-footer mdl-grid mdl-typography--display-4-color-contrast">
+                                        <span class="mdl-cell mdl-cell--4-col">
+                                            <label name="cantLikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_up</i>
+                                            </button> &nbsp;&nbsp;
+                                            <label name="cantDislikes">20</label>
+                                            <button class="mdl-button mdl-js-button mdl-button--icon">
+                                                <i class="material-icons">thumb_down</i>
+                                            </button> &nbsp;&nbsp;&nbsp;
+                                            Publicado el <label name="fec-pub">01/01/2015</label>
                                         </span>
-                                        <span class="published">
-                                            Publicado el 01/01/2015
+                                        <span class="tags mdl-cell mdl-cell--8-col">
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag1
+                                            </button>
+                                            <button class="mdl-button mdl-js-button">
+                                                #tag2
+                                            </button>
                                         </span>
                                     </p>
                                 </article>
