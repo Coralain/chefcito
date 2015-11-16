@@ -24,7 +24,17 @@
     </head>
     <body>
         <!-- MATERIAL DESIGN -->
-        <div class="mdl-layout mdl-js-layout">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="logo">
+                        <img src="images/propuesta11_logo.png" width="200">
+                    </div>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            
             <main class="mdl-layout__content">
 
                 <!-- BOTON-IR ARRIBA -->
@@ -33,15 +43,12 @@
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
                     <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet center">
-                        <img src="images/propuesta11_logo.png" style="width: 300px;">
-                        <br/>
-                        <br/>
                         <div class="mdl-typography--display-3">
                             Bienvenid@
                         </div>
                         <br/>
                         <div class="mdl-typography--headline--color-contrast">
-                            Investiga, crea y aprende :)
+                            Investiga, aprende y cocina :)
                         </div>
                         <br/>
                         <br/>
@@ -64,11 +71,10 @@
                             <br/>
                             <br/>
                             <br/>
-                            <a class="mdl-button--primary" href="">
-                                ¿No tienes cuenta? Créate una :)
+                            <a class="mdl-button--primary" href="registrarse.jsp">
+                                ¿No tienes cuenta? Crear una
                             </a>
                         </form>
-                        <br/>
                         <br/>
                         <br/>
                         <br/>
@@ -79,7 +85,7 @@
                     <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
                 </div>
 
-                <footer class="mdl-mini-footer" style="position: fixed; bottom: 0px">
+                <footer class="mdl-mini-footer fixed-botton">
                     <div class="mdl-mini-footer__left-section">
                         <div class="mdl-logo">Copyright 2015 GF websites</div>
                         <ul class="mdl-mini-footer__link-list">
