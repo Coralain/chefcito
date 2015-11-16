@@ -1,8 +1,15 @@
+::selection {
+    background: #0097A7;
+    color: #B2EBF2;
+}
+
 .mdl-layout__header {
     padding: 0.5em;
 }
 
-.mdl-layout__drawer-button .material-icons {
+.mdl-layout__drawer-button .material-icons,
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link,
+.mdl-layout__header-row .material-icons {
     color: white;
 }
 
@@ -16,12 +23,22 @@
     margin-top: 2em;
 }
 
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
-    color: white;
-}
-
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
     background: #88cccc;
+}
+
+.mdl-badge[data-badge]:after {
+    background-color: #0097A7;
+    color: #fff;
+    right: -1em;
+}
+
+.mdl-menu__container.is-visible, .mdl-menu__container.is-animating {
+    right: 1em !important;
+}
+
+.mdl-layout-title img{
+    width: 85%;
 }
 
 .mdl-grid {
@@ -31,4 +48,16 @@
 
 article p {
     text-align: justify;
+}
+
+article p.article-footer {
+    font-size: 0.8em;
+}
+
+article span.valoracion button {
+    font-weight: normal !important;
+}
+
+article span.published {
+    color: #727272;
 }
