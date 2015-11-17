@@ -42,8 +42,8 @@
                 <span class="ir-arriba icon-arrow-up"></span>
 
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--5-col mdl-cell--2-col-tablet mdl-cell--hide-phone"></div>
-                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-typography--text-center">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--hide-phone"></div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-typography--text-center">
                         <div class="mdl-typography--display-3">
                             Bienvenid@
                         </div>
@@ -61,11 +61,16 @@
                             <br/>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" type="text" id="apellidos">
-                                <label class="mdl-textfield__label" for="apellidos">Apellidos</label>
+                                <label class="mdl-textfield__label" for="apellidos">Apellido Paterno</label>
                             </div>
                             <br/>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="email" id="correo">
+                                <input class="mdl-textfield__input" type="text" id="apellidos">
+                                <label class="mdl-textfield__label" for="apellidos">Apellido Materno</label>
+                            </div>
+                            <br/>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="email" id="correo" required>
                                 <label class="mdl-textfield__label" for="correo">Correo</label>
                             </div>
                             <br/>
@@ -75,24 +80,29 @@
                             </div>
                             <br/>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="usuario">
+                                <input class="mdl-textfield__input" type="text" id="usuario" required>
                                 <label class="mdl-textfield__label" for="usuario">Usuario</label>
                             </div>
                             <br/>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="password" id="contr">
+                                <input class="mdl-textfield__input" type="password" id="contr" required>
                                 <label class="mdl-textfield__label" for="contr">Contraseña</label>
                             </div>
                             <br/>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" required>
                                 <input class="mdl-textfield__input" type="password" id="contr2">
                                 <label class="mdl-textfield__label" for="contr2">Confirmar Contraseña</label>
                             </div>
-                            <br/>
+                            <br/><br/>
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-typography--text-left" for="private">
                                 <input type="checkbox" id="private" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label">Privado</span>
+                                <span class="mdl-checkbox__label" id="lblPrivate">Privado</span>
+                                <div class="mdl-tooltip" for="lblPrivate">
+                                    Si seleccionas esta opción,<br/>
+                                    nadie podrá ver tu perfil.
+                                </div>
                             </label>
+                            
                             <br/><br/><br/>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                                 Registrarte
@@ -110,7 +120,7 @@
                         <br/>
                         <br/>
                     </div>
-                    <div class="mdl-cell mdl-cell--5-col mdl-cell--2-col-tablet mdl-cell--hide-phone"></div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--hide-phone"></div>
                 </div>
 
                 <footer class="mdl-mini-footer fixed-botton">

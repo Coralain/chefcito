@@ -28,14 +28,37 @@
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
-                    <div class="mdl-layout-spacer"></div>
-                    <div class="logo">
-                        <img src="images/propuesta11_logo.png" width="200">
+                    <div class="pt1 mdl-layout--large-screen-only">
+                        <div class="logo">
+                            <img src="images/propuesta11_logo.png" width="200" height="80">
+                        </div>
                     </div>
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="pt2" style="width: 55%">
+                        <div class="search_bar">
+                            <a href="" class="icon-search"></a>
+                            <!--a href=""><i class="material-icons">search</i></a-->
+                            <input type="text" id="bar"  autocomplete="on" placeholder="Explorar Temas">
+                        </div>
+                    </div>
+                    <div class="mdl-layout-spacer"></div>
+                    <form action="#" class="mdl-cell--hide-phone mdl-cell--hide-tablet">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="us">
+                            <label class="mdl-textfield__label" for="us">Usuario</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="password" id="ps">
+                            <label class="mdl-textfield__label" for="ps">Contraseña</label>
+                        </div>
+                        <button class="mdl-button mdl-js-button text-primary-color">
+                            Ingresar
+                        </button>
+                    </form>
                     <div class="mdl-layout-spacer"></div>
                 </div>
             </header>
-            
+
             <main class="mdl-layout__content">
 
                 <!-- BOTON-IR ARRIBA -->
@@ -52,8 +75,21 @@
                             Investiga, aprende y cocina :)
                         </div>
                         <br/>
-                        <br/>
-                        <form action="#">
+                        <form action="#" class="mdl-cell--hide-desktop frm-white">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="us">
+                                <label class="mdl-textfield__label" for="us">Usuario</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="password" id="ps">
+                                <label class="mdl-textfield__label" for="ps">Contraseña</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                                Ingresar
+                            </button>
+                        </form>
+                        <div class="mdl-cell--hide-desktop"><br/><br/><hr/></div><br/><br/>                        
+                        <form action="#" class="frm-white">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" type="text" id="nombres">
                                 <label class="mdl-textfield__label" for="nombres">Nombres</label>
@@ -102,26 +138,28 @@
                                     nadie podrá ver tu perfil.
                                 </div>
                             </label>
-                            
                             <br/><br/><br/>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                                 Registrarte
                             </button>
-                            <br/>
-                            <br/>
-                            <a class="mdl-button--primary" href="login.jsp">
-                                ¿Ya tienes una cuenta? Ingresar
-                            </a>
+                            <br/><br/>
                         </form>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--hide-phone"></div>
                 </div>
+                <div class="slide">
+                    <a class="gallery-image" rel="gallery" href="images/img1.png" ><img src="images/img1.png"/></a>
+                    <a class="gallery-image" rel="gallery" href="images/img2.png" ><img src="images/img2.png"/></a>
+                    <a class="gallery-image" rel="gallery" href="images/img3.png" ><img src="images/img3.png"/></a>
+                    <a class="gallery-image" rel="gallery" href="images/img4.png" ><img src="images/img4.png"/></a>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
                 <footer class="mdl-mini-footer fixed-botton">
                     <div class="mdl-mini-footer__left-section">

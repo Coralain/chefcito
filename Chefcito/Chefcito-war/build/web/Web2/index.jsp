@@ -17,7 +17,7 @@
         <!-- CARGA DE PAGINA -->
         <script  src="js/pace.min.js"></script>
         <!--OTROS-->
-        <script src="js/jsCode.js"></script>
+        <script src="js/jsIndex.js"></script>
         <!-- MATERIAL DESIGN -->
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-teal.min.css" />
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
@@ -100,8 +100,9 @@
                                         Agregar nueva publicación
                                     </p>
                                 </article>
-                                <div id="add-popup">
-                                    <div id="adding">
+                                <!-- POPUP PARA AGREGAR NUEVA PUBLICACION -->
+                                <div id="add-popup" class="popup">
+                                    <div class="cont-pop">
                                         <form id="new-public">
                                             <div class="mdl-textfield mdl-js-textfield">
                                                 <input class="mdl-textfield__input" type="text" id="sample1">

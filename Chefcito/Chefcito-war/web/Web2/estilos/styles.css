@@ -29,6 +29,10 @@ ul, ul li {
     color: white;
 }
 
+.mdl-layout__header-row {
+    padding-left: 50px;
+}
+
 .mdl-layout-title {
     margin-top: 2em;
 }
@@ -103,6 +107,9 @@ article .mdl-grid {
     margin-bottom: 0px;
 }
 
+form .mdl-checkbox.is-upgraded {
+    margin-left: 100px;
+}
 
 ul.coments:last-child {
     margin-bottom: 1.5em;
@@ -123,7 +130,7 @@ article ul.coments li form .mdl-textfield {
 }
 
 
-#add-popup {
+.popup {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
@@ -136,14 +143,13 @@ article ul.coments li form .mdl-textfield {
     display: table;
 }
 
-#add-popup #adding {
+.popup .cont-pop {
     vertical-align: middle;
     text-align: center;
     display: table-cell;
 }
 
-#adding form#new-public {
-    width: 40%;
+.popup .cont-pop form {
     padding: 2em;
     text-align: right;
     margin: 0px auto;
@@ -151,7 +157,50 @@ article ul.coments li form .mdl-textfield {
     vertical-align: middle;
 }
 
-#adding form#new-public .mdl-textfield {
+.popup .cont-pop form .mdl-textfield {
     width: 100%;
 }
 
+
+.cont-pop form#new-public {
+    width: 1000px;
+}
+
+/*HOME*/
+.mdl-layout__header-row form .mdl-textfield{
+    width: 100px;
+}
+form.frm-white{
+    background: #FFF !important;
+    padding: 1em;
+}
+
+@media screen and (max-width:1200px){
+    .cont-pop form#new-public {
+        width: 900px;
+    }
+    form .mdl-checkbox.is-upgraded {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .cont-pop form#new-public {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .cont-pop form#new-public {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:300px){
+    .cont-pop form#new-public {
+        width: 85%;
+    }
+    .cont-pop form#loginFrm {
+        width: 280px;
+    }
+}
