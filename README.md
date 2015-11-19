@@ -1,5 +1,5 @@
-# chefcito
-Red social para cociner@s
+# chefcito - Web
+Red social culinaria
 
 #
 Chefcito-war: Usa servlets
