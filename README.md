@@ -11,11 +11,11 @@ Versión 1
 Versión 2... con material design
 
 ## Paleta
-- [x] .dark-primary-color    { background: #0097A7; }
-- [x] .default-primary-color { background: #00BCD4; }
-- [x] .light-primary-color   { background: #B2EBF2; }
-- [x] .accent-color          { background: #009688; }
-- [x] .text-primary-color    { color: #FFFFFF; }
-- [x] .primary-text-color    { color: #212121; }
-- [x] .secondary-text-color  { color: #727272; }
-- [x] .divider-color         { border-color: #B6B6B6; }
+- .dark-primary-color    { background: #0097A7; }
+- .default-primary-color { background: #00BCD4; }
+- .light-primary-color   { background: #B2EBF2; }
+- .accent-color          { background: #009688; }
+- .text-primary-color    { color: #FFFFFF; }
+- .primary-text-color    { color: #212121; }
+- .secondary-text-color  { color: #727272; }
+- .divider-color         { border-color: #B6B6B6; }
